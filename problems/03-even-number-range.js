@@ -9,8 +9,16 @@
 */
 
 function evenNumberRange(num1, num2) {
-    // Your code here
-}
+  
+    let arr =[]
+  
+    for(let i = num1; i < num2; i++){
+      if(i % 2 === 0){
+        arr.push(i)
+      }
+    }
+  return arr
+  }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

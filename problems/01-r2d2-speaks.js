@@ -15,11 +15,22 @@
 */
 
 function r2d2Speaks(code) {
-    // Your code here
-}
+    if (code.length === 0) {
+        return
+    }
+    else if (code[0] === 0) {
+    code.shift()
+    console.log("beep");
+    setTimeout(r2d2Speaks,400,code)
+    }
+    else if (code[0] === 1) {
+        code.shift()
+        console.log("boop")
+        setTimeout(r2d2Speaks,800,code)
+    }
+  }
 
-let code = [0, 1, 1, 0];
-r2d2Speaks(code);
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
